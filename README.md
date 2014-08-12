@@ -48,6 +48,9 @@ the actual program.
 Alias a program you usually use to run `journal.sh` before
 the actual program.
 
+**XXX** Do not use with `$EDITOR`. You might end-up in an
+infinite loop.
+
 ```
 # ~/.bashrc
 #
