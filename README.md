@@ -37,8 +37,8 @@ the actual program.
 ```
 # ~/.bashrc
 #
-# # NOTE: Write a journal entry first before I do anything
-# #       stupid.
+# # NOTE: Write a journal entry first before I break my 
+# #       system.
 # alias pacman='journal.sh && pacman'
 #
 ```
