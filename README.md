@@ -5,8 +5,22 @@ Journal.sh is a tiny annoying program that will help you
 remember things (and make you a better person (and make
 your life less miserable)).
 
-Easy Mode
----------
+How to Use
+----------
+
+```
+$ journal.sh
+Please write a new entry to your journal entry (08-12-14)
+Will proceed to use ${EDITOR}: vim [ENTER]
+```
+
+Installation
+------------
+
+There are 4 installation modes depending on how serious you
+are.
+
+### Easy Mode
 
 Install `journal.sh`.
 
@@ -15,8 +29,7 @@ ln -s $(pwd)/journal.sh /usr/local/bin/journal.sh
 chmod +x /usr/local/bin/journal.sh
 ```
 
-Normal mode
------------
+### Normal mode
 
 Alias a program you seldomly use to run `journal.sh` before
 the actual program.
@@ -30,8 +43,7 @@ the actual program.
 #
 ```
 
-Hard Mode
----------
+### Hard Mode
 
 Alias a program you usually use to run `journal.sh` before
 the actual program.
@@ -44,8 +56,7 @@ the actual program.
 #
 ```
 
-Annoying Mode
--------------
+### Annoying Mode
 
 Prohibit access to terminal until you have written anything
 in your journal.
