@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Configuration variables
-${JOURNAL_PATH:=~/.journal_entries}
+JOURNAL_PATH=${JOURNAL_PATH:-~/.journal_entries}
 
 # Retrieve the current date.
 filename=$(date +"%m-%d-%y")
@@ -18,11 +18,11 @@ function has_written_today() {
   fi;
 }
 
-# Check if the user has written something today.
+# Check if the user has not written something today.
 if [ $(has_written_today) = false ] ; then
   # Send a message to the user.
   echo "Please write a new entry to your journal entry (${filename})"
   echo "Will proceed to use \${EDITOR}: ${EDITOR} [ENTER]"
   read
-  $EDITOR ~/.journal_entries/${filename}
+  $EDITOR ${JOURNAL_PATH}/${filename}
 fi
